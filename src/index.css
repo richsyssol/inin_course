@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+
+  --skyBlue: #2274e0;
+}
+
+*,
+::after,
+::before {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* Notification Container */
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Individual Notification Box */
+.notification-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
+
+/* Green Tick Icon */
+.tick-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.tick-svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Notification Text */
+.notification-text {
+  font-size: 14px;
+}
+
+.notification-location {
+  color: gray;
+  font-size: 12px;
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.bottom-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111; /* Black background */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  border-top: 2px solid red;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+
+.timer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.price {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.free {
+  color: #ff0000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.register-btn {
+  background: linear-gradient(45deg, #ff0000, #ff5757);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.register-btn:hover {
+  background: linear-gradient(45deg, #ff5757, #ff0000);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+.offer-text {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #aaa;
+}
