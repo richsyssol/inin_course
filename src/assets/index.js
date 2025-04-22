@@ -9,6 +9,17 @@ import bookk3 from "./books/bookk3.png";
 import bookk4 from "./books/bookk4.png";
 import bookk5 from "./books/bookk5.png";
 import thumbnail from "./books/videothumbnail.png";
-export { book1, book2, thumbnail, bookk1, bookk2, bookk3, bookk4, bookk5 };
+import allbooks from "./books/all-books.png";
+export {
+  book1,
+  book2,
+  thumbnail,
+  bookk1,
+  bookk2,
+  bookk3,
+  bookk4,
+  bookk5,
+  allbooks,
+};
 import ininvideo from "./ininvideo.mp4";
 export { ininvideo };

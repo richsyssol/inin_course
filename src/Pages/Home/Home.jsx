@@ -8,12 +8,14 @@ import BottomPopUp from "./BottomPopUp";
 import BookSlider from "./BookSlider";
 import MobileRepairCourse from "./MobileRepairCourse";
 import MobileRepairBooksCarousel from "./MobileRepairBooksCarousel";
+import MobileRepairBooks from "./MobileRepairBooks";
 
 function Home() {
   return (
     <div>
       <HeroSection />
       <MobileRepairBooksCarousel />
+      <MobileRepairBooks />
       <OurServices />
       <Testimonials />
       <MobileRepairCourse />
